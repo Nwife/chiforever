@@ -1,3 +1,11 @@
 export { default as Navbar } from "./navbar/Navbar";
 export { default as Footer } from "./footer/Footer";
 export { default as PorfolioItem } from "./home/PortfolioItem";
+export { default as Montserrat } from "./texts/Montserrrat";
+export { default as Testimonial } from "./home/Testimonial";
+export { default as PortfolioListItem } from "./portfolio/PortfolioListItem";
+export { default as PortfolioHeader } from "./portfolio/PortfolioHeader";
+export { default as PackageDetailItem } from "./booking/PackageDetailItem";
+export { default as PackageItem } from "./booking/PackageItem";
+export { default as Input } from "./form/Input";
+export { default as AccordionItem } from "./ui/AccordionItem";

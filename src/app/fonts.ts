@@ -36,7 +36,7 @@ export const cormorantInfant = Cormorant_Infant({
 export const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["200", "300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
 });
 

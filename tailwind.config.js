@@ -25,7 +25,7 @@ module.exports = {
         montserrat: ["Montserrat", "sans-serif"],
         cormorantInfant: ["Cormorant Infant", "sans-serif"],
         marcellus: ["Marcellus", "sans-serif"],
-        gfsNeohellenic: ["GFS_Neohellenic", "sans-serif"],
+        gfsNeohellenic: ["GFS Neohellenic", "sans-serif"],
         homemadeApple: ["Homemade Apple", "sans-serif"],
         erotique: ["Erotique Trial", "sans-serif"],
         dmSans: ["DM Sans", "sans-serif"],
@@ -55,13 +55,18 @@ module.exports = {
           900: "#6D705E",
         },
         brown: {
+          100: "#A0A48E",
           500: "#BFB59B",
           600: "#99917C",
           700: "#736D5D",
+          800: "#AF7855"
         },
         red: {
           200: "#D0AF9A",
           300: "#DE967D",
+        },
+        darkgreen: {
+          500: "#0B2520",
         },
       },
       fontSize: {

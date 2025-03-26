@@ -1,3 +1,4 @@
+import { Montserrat, Testimonial } from "@/components";
 import PortfolioItem from "@/components/home/PortfolioItem";
 import Image from "next/image";
 
@@ -40,9 +41,10 @@ export default function Home() {
           </div>
         </div>
         <div className="max-w-[780px] w-[780px] bg-white absolute left-1/2 transform -translate-x-1/2 top-2/3 pt-[54px] pb-[50px]">
-          <p className="text-xsm font-montserrat uppercase mb-8 text-center text-green-400 font-medium tracking-[2px]">
-            Chi Forever Weddings
-          </p>
+          <Montserrat
+            text=" Chi Forever Weddings"
+            styles="mb-8 text-center text-green-400"
+          />
           <h2 className="text-6xl text-green-600 max-w-[565px] text-center mx-auto font-erotique">
             Luxury Weddings & Events
           </h2>
@@ -70,23 +72,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className="bg-[#0B2520]">
-        <div className="flex flex-col justify-center items-center py-20">
-          <p className="tracking-[2px] uppercase text-green-300 mb-4 font-medium font-montserrat">
-            Testimonial
-          </p>
-          <blockquote className="text-green-100 text-3xl max-w-[672px] leading-[40px] capitalize text-center font-cormorantInfant">
-            &quot;Chi Weddings made our wedding stress-free and magical! Every
-            detail was perfect, and we enjoyed every moment.&quot;
-          </blockquote>
-          <p className="text-xl mt-12 mb-14 text-green-200 font-cormorantInfant">
-            &mdash; Sarah & David
-          </p>
-          <button className="text-red-200 border border-red-200 py-4 px-5 font-dmSans">
-            Book A Consult
-          </button>
-        </div>
-      </section>
+      <Testimonial />
       <section className="max-w-[1400px] mx-auto mt-40 flex justify-end">
         <div className="relative -right-20 z-20 bottom-10">
           <div className="absolute top-16 -left-32 -z-10">
@@ -116,9 +102,7 @@ export default function Home() {
         <div className="h-[740px] relative bg-white w-1/2 pl-[195px]">
           <div className="flex flex-col justify-center h-full">
             <Image src="/svgs/rings.svg" width={28} height={21} alt="rings" />
-            <p className="font-montserrat uppercase text-xsm text-green-300 font-medium mb-2 mt-3">
-              Who we are
-            </p>
+            <Montserrat text="who we are" styles="text-green-300 mb-2 mt-3" />
             <p className="text-5xl max-w-[408px] text-green-500 leading-[60px] font-marcellus">
               We create memorable stories for your event.
             </p>
@@ -136,9 +120,7 @@ export default function Home() {
         </div>
       </section>
       <section className="max-w-[1200px] mx-auto py-28">
-        <p className="text-xsm text-green-300 font-medium font-montserrat tracking-[2px] uppercase text-center mb-1">
-          Portfolio
-        </p>
+        <Montserrat text="Portfolio" styles="text-center text-green-300 mb-1" />
         <p className="text-center text-green-800 text-[50px] max-w-[730px] leading-[60px] mx-auto">
           Designing Unforgettable Moments for Your Dream Wedding
         </p>

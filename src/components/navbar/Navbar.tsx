@@ -21,12 +21,12 @@ const Navbar = () => {
           <Link href="/portfolio">Contact Us</Link>
         </div>
 
-        <button
-          aria-label="Book Us"
+        <Link
+          href={"/book-us"}
           className="block text-xs uppercase text-white bg-green-500 px-5 py-4"
         >
           Book Us
-        </button>
+        </Link>
       </div>
       <Image
         src="/svgs/horizontal-divider.svg"
