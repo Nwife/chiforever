@@ -45,7 +45,7 @@ export default function Home() {
             text=" Chi Forever Weddings"
             styles="mb-8 text-center text-green-400"
           />
-          <h2 className="text-6xl text-green-600 max-w-[565px] text-center mx-auto font-erotique">
+          <h2 className="text-6xl text-green-600 max-w-[565px] text-center mx-auto font-medium font-erotique">
             Luxury Weddings & Events
           </h2>
           <div className="flex justify-center ">

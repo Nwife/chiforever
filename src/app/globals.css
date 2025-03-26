@@ -26,6 +26,13 @@ body {
 @font-face {
   font-family: "Erotique Trial";
   src: url("/fonts/ErotiqueTrial-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400; /* Normal */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Erotique Trial";
+  src: url("/fonts/ErotiqueTrial-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium */
   font-style: normal;
 }

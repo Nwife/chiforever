@@ -106,7 +106,7 @@ const BookUs = () => {
           text="Packages for you"
           styles="text-center text-green-300"
         />
-        <p className="text-3xl text-green-600 max-w-[570px] text-center mx-auto leading-[48px] mt-5 mb-10 font-erotique">
+        <p className="text-3xl text-green-600 max-w-[570px] text-center mx-auto leading-[48px] mt-5 mb-10 font-medium font-erotique">
           Exciting packages for your beautiful day.{" "}
         </p>
         <div className="flex flex-col gap-10">

@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="w-[60px]"></div>
         <div className="flex items-center text-xs gap-12 uppercase">
           <Link href="/">Home</Link>
-          <Link href="/about-me">About</Link>
+          <Link href="/about-us">About</Link>
           <Link href="/services">Services</Link>
         </div>
         <div className="absolute left-1/2 transform -translate-x-1/2">
