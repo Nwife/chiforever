@@ -9,3 +9,4 @@ export { default as PackageDetailItem } from "./booking/PackageDetailItem";
 export { default as PackageItem } from "./booking/PackageItem";
 export { default as Input } from "./form/Input";
 export { default as AccordionItem } from "./ui/AccordionItem";
+export { default as FormInput } from "./form/FormInput";

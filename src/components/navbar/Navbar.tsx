@@ -18,7 +18,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center text-xs gap-10 uppercase">
           <Link href="/portfolio">Portfolio</Link>
-          <Link href="/portfolio">Contact Us</Link>
+          <Link href="/contact-us">Contact Us</Link>
         </div>
 
         <Link
