@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <section className="h-[720px] max-w-[1400px] mx-auto mt-10 relative">
+      <section className=" max-w-[1400px] mx-auto mt-10 relative">
         <div className="grid grid-cols-3 gap-5">
           <div className="relative">
             <Image
