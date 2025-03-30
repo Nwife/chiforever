@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Montserrat } from "..";
 
 const Testimonial = () => {
@@ -12,9 +13,9 @@ const Testimonial = () => {
         <p className="text-xl mt-12 mb-14 text-green-200 font-cormorantInfant">
           &mdash; Sarah & David
         </p>
-        <button className="text-red-200 border border-red-200 py-4 px-5 font-dmSans">
+        <Link href={'/book-us'} className="text-red-200 border border-red-200 py-4 px-5 font-dmSans">
           Book A Consult
-        </button>
+        </Link>
       </div>
     </section>
   );

@@ -43,9 +43,12 @@ export default function Home() {
               Luxury Weddings & Events
             </h2>
             <div className="flex justify-center ">
-              <button className="mt-10 text-xs tracking-[2px] uppercase border-b border-brown-600 pb-1 text-green-500 font-medium font-montserrat">
+              <Link
+                href={"/book-us"}
+                className="mt-10 text-xs tracking-[2px] uppercase border-b border-brown-600 pb-1 text-green-500 font-medium font-montserrat"
+              >
                 Book a Consult
-              </button>
+              </Link>
             </div>
           </div>
           <div className="absolute md:-left-[20%] -z-[105] -bottom-1/4">
@@ -113,12 +116,12 @@ export default function Home() {
               Crafting unforgettable narratives that will make your special
               occasion truly memorable and cherished for years to come.
             </p>
-            <button
-              aria-label="more about us"
+            <Link
+              href={"/about-us"}
               className="uppercase w-fit text-xs tracking-[2px] border border-brown-500 text-green-500 font-medium py-4 px-7 mt-10 font-montserrat"
             >
               more about us
-            </button>
+            </Link>
           </div>
         </div>
       </section>
