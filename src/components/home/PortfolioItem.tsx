@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface IPortfolioItem {
   name: string;
@@ -22,9 +23,12 @@ const PortfolioItem = ({ name, imageUrl }: IPortfolioItem) => {
           {name}
         </p>
         <div className="flex justify-center">
-          <button className="mt-3 text-xs tracking-[2px] uppercase border-b border-green-500 pb-1 text-green-400 font-medium font-montserrat">
+          <Link
+            href={"/portfolio/ife"}
+            className="mt-3 text-xs tracking-[2px] uppercase border-b border-green-500 pb-1 text-green-400 font-medium cursor-pointer font-montserrat"
+          >
             learn more
-          </button>
+          </Link>
         </div>
       </div>
     </div>

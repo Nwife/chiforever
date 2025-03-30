@@ -1,7 +1,7 @@
 import { Logo } from "@/elements";
 import Image from "next/image";
 import Link from "next/link";
-import FooterImage from "./FooterImage";
+import ImageOverlay from "../home/ImageOverlay";
 
 const Footer = () => {
   return (
@@ -16,27 +16,27 @@ const Footer = () => {
         Instagram
       </h2>
       <div className="grid grid-cols-3 md:grid-cols-6 gap-3">
-        <FooterImage
+        <ImageOverlay
           imgUrl="/images/home/footer/footer-image-one.png"
-          styles="md:mt-8 hover:md:mt-8"
+          styles="md:mt-8"
         />
-        <FooterImage
+        <ImageOverlay
           imgUrl="/images/home/footer/footer-image-two.png"
-          styles="md:mb-8 hover:md:mb-8"
+          styles="md:mb-8"
         />
-        <FooterImage
+        <ImageOverlay
           imgUrl="/images/home/footer/footer-image-three.png"
           styles="md:mt-8"
         />
-        <FooterImage
+        <ImageOverlay
           imgUrl="/images/home/footer/footer-image-four.png"
           styles="md:mb-8"
         />
-        <FooterImage
+        <ImageOverlay
           imgUrl="/images/home/footer/footer-image-five.png"
           styles="md:mt-8"
         />
-        <FooterImage
+        <ImageOverlay
           imgUrl="/images/home/footer/footer-image-six.png"
           styles="md:mb-8"
         />

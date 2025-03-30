@@ -10,4 +10,4 @@ export { default as PackageItem } from "./booking/PackageItem";
 export { default as Input } from "./form/Input";
 export { default as AccordionItem } from "./ui/AccordionItem";
 export { default as FormInput } from "./form/FormInput";
-export { default as FooterImage } from "./footer/FooterImage";
+export { default as ImageOverlay } from "./home/ImageOverlay";

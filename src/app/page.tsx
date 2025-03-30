@@ -1,6 +1,7 @@
 import { Montserrat, Testimonial } from "@/components";
 import PortfolioItem from "@/components/home/PortfolioItem";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -103,7 +104,7 @@ export default function Home() {
         </div>
         <div className="py-20 lg:py-0 lg:h-[740px] relative bg-white lg:w-1/2 lg:pl-[125px] xl:pl-[195px]">
           <div className="flex flex-col justify-center items-center lg:items-start h-full px-6 lg:px-0">
-           <Image src="/svgs/rings.svg" width={28} height={21} alt="rings" />
+            <Image src="/svgs/rings.svg" width={28} height={21} alt="rings" />
             <Montserrat text="who we are" styles="text-green-300 mb-2 mt-3" />
             <p className="text-[34px] text-center lg:text-left sm:text-[38px] md:text-[42px] lg:text-[44px] mmd:text-5xl leading-[45px] lg:leading-[50px] max-w-[408px] text-green-500 sm:leading-[60px] font-marcellus lg:pr-4">
               We create memorable stories for your event.
@@ -145,12 +146,12 @@ export default function Home() {
           />
         </div>
         <div className="flex justify-center">
-          <button
-            aria-label="view all portfolio"
+          <Link
+            href={"/portfolio"}
             className="uppercase w-fit text-xs text-center tracking-[2px] border border-green-500 text-green-500 font-medium py-4 px-7 mt-[93px] font-montserrat"
           >
             view all portfolios
-          </button>
+          </Link>
         </div>
       </section>
     </main>

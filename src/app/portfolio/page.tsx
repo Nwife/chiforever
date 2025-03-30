@@ -48,7 +48,7 @@ const Portfolio = () => {
   ];
   return (
     <main>
-      <section className="max-w-[1200px] mx-auto mt-[72px] pb-[132px]">
+      <section className="max-w-[1200px] mx-auto mt-[72px] pb-[132px] px-2.5 sm:px-5 2xl:px-0">
         <div className="flex justify-center">
           <Image src="/svgs/rings.svg" width={28} height={21} alt="rings" />
         </div>
@@ -57,7 +57,7 @@ const Portfolio = () => {
           subtext="Celebrating love in every detail, from the elegant decor to the
           heartfelt moments. A day where joy and togetherness shine brightly."
         />
-        <div className="grid grid-cols-2 gap-8 mt-[60px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-[60px]">
           {portfolio.map(({ groom, bride, weddingDate, imageUrl }, idx) => (
             <PortfolioListItem
               key={idx}
