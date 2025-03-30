@@ -97,16 +97,16 @@ const BookUs = () => {
           src="/images/book-us/pricing.png"
           width={1280}
           height={709}
-          className="w-full px-20"
+          className="w-full px-2.5 sm:px-5 lg:px-20"
           alt="pricing"
         />
       </section>
-      <section className="max-w-[1200px] mx-auto mt-14 mb-10 pb-[140px]">
+      <section className="max-w-[1200px] mx-auto mt-14 pb-[95px] md:pb-[140px] px-2.5 sm:px-5 2xl:px-0">
         <Montserrat
           text="Packages for you"
           styles="text-center text-green-300"
         />
-        <p className="text-3xl text-green-600 max-w-[570px] text-center mx-auto leading-[48px] mt-5 mb-10 font-medium font-erotique">
+        <p className="text-2xl sm:text-[26px] md:text-[28px] mmd:text-3xl  text-green-600 max-w-[570px] text-center mx-auto leading-[36px] sm:leading-[48px] mt-5 mb-10 font-medium font-erotique">
           Exciting packages for your beautiful day.{" "}
         </p>
         <div className="flex flex-col gap-10">
@@ -121,13 +121,13 @@ const BookUs = () => {
           ))}
         </div>
       </section>
-      <section className="max-w-[1040px] mx-auto pb-[140px]">
+      <section className="max-w-[1040px] mx-auto pb-[95px] md:pb-[140px] px-2.5 sm:px-5 2xl:px-0">
         <>
           <Montserrat
             text="send a custom message"
             styles="text-green-300 text-center"
           />
-          <p className="text-3xl my-6 max-w-[633px] mx-auto text-center leading-[48px] font-erotique">
+          <p className="text-2xl sm:text-[26px] md:text-[28px] mmd:text-3xl  my-6 max-w-[633px] mx-auto text-center leading-[36px] sm:leading-[48px] font-erotique">
             Please fill out the form below, and we’ll get back to you with a
             price.
           </p>
@@ -137,29 +137,29 @@ const BookUs = () => {
           </p>
         </>
         <div className="mt-20">
-          <p className="text-2xl text-black-200 font-medium font-cormorantInfant">
+          <p className="text-xl sm:text-2xl text-black-200 font-medium font-cormorantInfant">
             Personal Details
           </p>
-          <div className="grid grid-cols-2 gap-5 mt-9">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-5 sm:mt-9">
             <Input label="First Name" />
             <Input label="Last Name" />
             <Input label="Email " />
             <Input label="Phone Number (please add country code)" />
           </div>
-          <p className="text-2xl text-black-200 font-medium mt-16 font-cormorantInfant">
+          <p className="text-xl sm:text-2xl text-black-200 font-medium mt-16 font-cormorantInfant">
             Wedding Details
           </p>
-          <div className="grid grid-cols-2 gap-5 mt-9">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-5 sm:mt-9">
             <Input label="Wedding Category (Trad., White)" />
             <Input label="Proposed Date" type="date" />
             <Input label="Wedding Location " />
             <Input label="Total Wedding Budget (in US Dollars)" />
             <Input label="Guest Count" />
           </div>
-          <div className="mt-[72px] flex justify-end">
+          <div className="mt-[72px] flex sm:justify-end">
             <button
               aria-label="submit"
-              className="uppercase w-fit text-xsm border border-none text-white bg-green-500 font-medium py-[19px] px-[74px] tracking-[2px] font-montserrat"
+              className="uppercase w-full sm:w-fit text-xsm border border-none text-white bg-green-500 font-medium py-[19px] px-[74px] tracking-[2px] font-montserrat"
             >
               submit
             </button>
@@ -167,8 +167,8 @@ const BookUs = () => {
         </div>
       </section>
       <Testimonial />
-      <section className="max-w-[1200px] mx-auto py-[140px]">
-        <div className="grid grid-cols-2">
+      <section className="max-w-[1200px] mx-auto py-[95px] md:py-[140px] px-2.5 sm:px-5 2xl:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div>
             <p className="text-base text-brown-800 font-dmSans mb-1">FAQ</p>
             <p className="text-3xl">Got questions? I’ve got answers! </p>

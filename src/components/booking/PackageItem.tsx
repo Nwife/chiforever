@@ -15,7 +15,7 @@ const PackageItem = ({
 }: IPackageItem) => {
   return (
     <div className="bg-white p-[15px]">
-      <div className="border border-gray-200 pl-[52px] pt-20 pb-[100px] pr-[100px] flex items-start justify-between">
+      <div className="border border-gray-200 px-[52px] pt-20 pb-[100px] flex flex-col gap-10 mmd:gap-0 mmd:flex-row items-center mmd:items-start justify-between">
         <div>
           <Montserrat text={`package ${idx + 1}`} styles="text-green-300" />
           <p className="text-black-900 text-[40px] font-medium">$ {price}</p>

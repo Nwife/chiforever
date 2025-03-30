@@ -12,7 +12,7 @@ const Footer = () => {
         height={1}
         alt="border"
       />
-      <h2 className="text-4xl text-green-700 md:mt-[120px] font-marcellus text-center mb-7">
+      <h2 className="text-4xl text-green-700 mt-10 md:mt-[120px] font-marcellus text-center mb-7">
         Instagram
       </h2>
       <div className="grid grid-cols-3 md:grid-cols-6 gap-3">
