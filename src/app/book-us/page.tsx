@@ -69,16 +69,12 @@ const BookUs = () => {
 
   const faqs = [
     {
-      title: "How long will it take to receive our wedding photos?",
+      title: "Do you offer virtual services for out-of town or busy clients?",
       content: "Yes",
     },
     {
-      title: "Do you offer packages that include engagement shoots?",
+      title: "Do you offer other services other than weddings?",
       content: "Yes",
-    },
-    {
-      title: "Can we customize our wedding photography package?",
-      content: "Yes!",
     },
     {
       title: "What happens if the weather is bad on our wedding day?",
