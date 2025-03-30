@@ -1,3 +1,4 @@
+"use client"
 import { PortfolioHeader, PortfolioListItem, Testimonial } from "@/components";
 import Image from "next/image";
 import React from "react";
