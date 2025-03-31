@@ -1,3 +1,5 @@
+"use client";
+import { useRouter } from "next/navigation";
 import { Montserrat, PackageDetailItem } from "..";
 
 interface IPackageItem {
@@ -7,19 +9,15 @@ interface IPackageItem {
   packageDetail: string[];
 }
 
-const PackageItem = ({
-  idx,
-  price,
-  packageName,
-  packageDetail,
-}: IPackageItem) => {
+const PackageItem = ({ idx, packageName, packageDetail }: IPackageItem) => {
+  const { push } = useRouter();
   return (
     <div className="bg-white p-[15px]">
       <div className="border border-gray-200 px-[52px] pt-20 pb-[100px] flex flex-col gap-10 mmd:gap-0 mmd:flex-row items-center mmd:items-start justify-between">
         <div>
           <Montserrat text={`package ${idx + 1}`} styles="text-green-300" />
-          <p className="text-black-900 text-[40px] font-medium">$ {price}</p>
-          <p className="text-[26px] text-black-600 max-w-[269px]">
+          {/* <p className="text-black-900 text-[40px] font-medium">$ {price}</p> */}
+          <p className="text-[26px] text-black-600 mb-2.5 max-w-[269px]">
             {packageName}
           </p>
         </div>
@@ -32,6 +30,7 @@ const PackageItem = ({
           <button
             aria-label="book this plan"
             className="uppercase w-fit text-xsm tracking-[1.3px] border border-none text-white bg-green-500 font-medium py-5 px-7 font-inter"
+            onClick={() => push("book-us")}
           >
             book this plan
           </button>

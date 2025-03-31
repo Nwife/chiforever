@@ -2,25 +2,43 @@
 import { Logo } from "@/elements";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import { usePathname } from "next/navigation";
+import React, { useCallback, useState } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const pathname = usePathname();
+  const isActiveLink = useCallback(
+    (link: string) => {
+      return link === "/" ? pathname === link : pathname.startsWith(link);
+    },
+    [pathname]
+  );
   return (
     <nav className="relative">
-      <div className="text-green-800 tracking-[2px] font-gfsNeohellenic mx-auto max-w-[1400px] hidden lg:flex justify-between items-center py-6 px-20">
+      <div className="tracking-[2px] font-gfsNeohellenic mx-auto max-w-[1400px] hidden lg:flex justify-between items-center py-6 px-20">
         <div className="w-[60px]"></div>
         <div className="flex items-center text-xs gap-12 uppercase">
-          <Link href="/">Home</Link>
-          <Link href="/about-us">About</Link>
-          <Link href="/services">Services</Link>
+          <Link className={`${isActiveLink("/") ? "text-green-400" : "text-green-800"}`} href="/">
+            Home
+          </Link>
+          <Link className={`${isActiveLink("/about-us") ? "text-green-400" : "text-green-800"}`} href="/about-us">
+            About
+          </Link>
+          <Link className={`${isActiveLink("/services") ? "text-green-400" : "text-green-800"}`} href="/services">
+            Services
+          </Link>
         </div>
         <div className="absolute left-1/2 transform -translate-x-1/2">
           <Logo />
         </div>
         <div className="flex items-center text-xs gap-10 uppercase">
-          <Link href="/portfolio">Portfolio</Link>
-          <Link href="/contact-us">Contact Us</Link>
+          <Link className={`${isActiveLink("portfolio") ? "text-green-400" : "text-green-800"}`} href="/portfolio">
+            Portfolio
+          </Link>
+          <Link className={`${isActiveLink("contact-us") ? "text-green-400" : "text-green-800"}`} href="/contact-us">
+            Contact Us
+          </Link>
         </div>
 
         <Link

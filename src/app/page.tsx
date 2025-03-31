@@ -228,9 +228,9 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
               viewport={{ once: true }}
-              className="text-[34px] text-center lg:text-left sm:text-[38px] md:text-[42px] lg:text-[44px] mmd:text-5xl leading-[45px] lg:leading-[50px] max-w-[408px] text-green-500 sm:leading-[60px] font-marcellus lg:pr-4"
+              className="text-[34px] text-center lg:text-left sm:text-[38px] md:text-[42px] lg:text-[44px] mmd:text-5xl leading-[45px] lg:leading-[50px] max-w-[455px] text-green-500 sm:leading-[60px] font-marcellus lg:pr-4"
             >
-              We create memorable stories for your event.
+              We create memorable stories for your special day.
             </motion.p>
 
             {/* Description */}

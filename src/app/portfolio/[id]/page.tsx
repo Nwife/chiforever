@@ -1,4 +1,5 @@
-import { ImageOverlay, Montserrat } from "@/components";
+'use client'
+import { ImageOverlay, Montserrat, Testimonial } from "@/components";
 import React from "react";
 
 const PorfolioGallery = () => {
@@ -58,6 +59,7 @@ const PorfolioGallery = () => {
           />
         </div>
       </section>
+      <Testimonial />
     </main>
   );
 };
