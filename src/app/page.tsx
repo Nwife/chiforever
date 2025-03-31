@@ -129,7 +129,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="mt-10 text-[#DE967D] text-2xl font-homemadeApple"
           >
-            Lynn Goodman
+            The Notebook
           </motion.p>
         </div>
       </section>
