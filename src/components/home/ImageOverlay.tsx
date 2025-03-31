@@ -19,6 +19,7 @@ const ImageOverlay = ({
         width={width}
         height={height}
         alt="footer-image"
+        loading="lazy"
         className={`w-full h-auto transition-transform duration-700 ease-out group-hover:scale-[1.15] cursor-pointer ${styles}`}
       ></Image>
     </div>

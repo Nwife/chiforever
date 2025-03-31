@@ -25,8 +25,9 @@ const PortfolioListItem = ({
         height={376}
         className="w-full"
         alt="portfolio image"
+        loading="lazy"
       />
-      <div className="absolute inset-0 bg-[#1c2923cc] opacity-0 transition-opacity duration-500 ease-in-out hover:opacity-100 flex items-end">
+      <div className="absolute inset-0 bg-[#1c2923cc] opacity-0 transition-opacity duration-700 ease-in-out hover:opacity-100 flex items-end">
         <div className="text-white text-lg font-semibold pl-8 pb-5">
           <p className="text-red-200 text-xsm uppercase font-gfsNeohellenic mb-3">
             {weddingDate}

@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import { PortfolioHeader, PortfolioListItem, Testimonial } from "@/components";
 import Image from "next/image";
-import React from "react";
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
   const portfolio: {
@@ -50,9 +50,26 @@ const Portfolio = () => {
   return (
     <main>
       <section className="max-w-[1200px] mx-auto mt-[72px] pb-[132px] px-2.5 sm:px-5 2xl:px-0">
-        <div className="flex justify-center">
+        <motion.div
+          initial={{
+            y: -50, 
+            rotateY: 360, 
+          }}
+          animate={{
+            y: 0, 
+            rotateY: 0, 
+          }}
+          transition={{
+            duration: 3, 
+            ease: "easeInOut",
+            type: "spring", 
+            stiffness: 50,
+            damping: 25,
+          }}
+          className="flex justify-center"
+        >
           <Image src="/svgs/rings.svg" width={28} height={21} alt="rings" />
-        </div>
+        </motion.div>
         <PortfolioHeader
           text="Our Portfolio"
           subtext="Celebrating love in every detail, from the elegant decor to the
