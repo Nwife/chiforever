@@ -1,6 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { Montserrat, PackageDetailItem } from "..";
+import { motion } from "framer-motion";
 
 interface IPackageItem {
   idx: number;
@@ -12,20 +13,34 @@ interface IPackageItem {
 const PackageItem = ({ idx, packageName, packageDetail }: IPackageItem) => {
   const { push } = useRouter();
   return (
-    <div className="bg-white p-[15px]">
+    <motion.div
+      className="bg-white p-[15px]"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
+    >
       <div className="border border-gray-200 px-[52px] pt-20 pb-[100px] flex flex-col gap-10 mmd:gap-0 mmd:flex-row items-center mmd:items-start justify-between">
         <div>
           <Montserrat text={`package ${idx + 1}`} styles="text-green-300" />
-          {/* <p className="text-black-900 text-[40px] font-medium">$ {price}</p> */}
           <p className="text-[26px] text-black-600 mb-2.5 max-w-[269px]">
             {packageName}
           </p>
         </div>
-        <div className="flex flex-col gap-2">
+        <motion.div
+          className="flex flex-col gap-2"
+          variants={{
+            hidden: { opacity: 0 },
+            show: { opacity: 1, transition: { staggerChildren: 0.2 } },
+          }}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
           {packageDetail.map((item, idx) => (
             <PackageDetailItem key={idx} detail={item} />
           ))}
-        </div>
+        </motion.div>
         <div>
           <button
             aria-label="book this plan"
@@ -39,7 +54,7 @@ const PackageItem = ({ idx, packageName, packageDetail }: IPackageItem) => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

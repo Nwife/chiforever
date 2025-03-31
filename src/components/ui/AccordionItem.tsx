@@ -1,4 +1,5 @@
 import { AppSvg } from "@/elements";
+import { motion } from "framer-motion";
 
 const AccordionItem = ({
   index,
@@ -13,19 +14,27 @@ const AccordionItem = ({
 }) => {
   return (
     <div className="w-full space-y-4 text-darkgreen-500 font-extralight font-dmSans">
-      <div key={index} className="border-b border-[#DFD8CF]">
+      <motion.div
+        key={index}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3 }}
+        className="border-b border-[#DFD8CF]"
+      >
         <button
           onClick={() => toggleAccordion(index)}
           className="w-full flex justify-between items-center py-6 text-left"
         >
           <span>{item.title}</span>
-          <span
+          <motion.span
+            animate={{ rotate: openIndex === index ? 180 : 0 }}
+            transition={{ duration: 0.3 }}
             className={`transform transition-transform ${
               openIndex === index ? "rotate-180" : "rotate-0"
             }`}
           >
             {AppSvg.ic_caret}
-          </span>
+          </motion.span>
         </button>
         <div
           className={`overflow-hidden transition-[max-height] duration-300 ease-in-out ${
@@ -34,7 +43,7 @@ const AccordionItem = ({
         >
           <div className="pb-4">{item.content}</div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
