@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Logo } from "@/elements";
 import Image from "next/image";
 import Link from "next/link";
@@ -59,7 +59,10 @@ const Footer = () => {
             }}
             viewport={{ once: true }}
           >
-            <ImageOverlay imgUrl={imgUrl} />
+            <ImageOverlay
+              imgUrl={imgUrl}
+              styles={index % 2 ? "md:mt-4" : "md:mb-4"}
+            />
           </motion.div>
         ))}
       </motion.div>
