@@ -10,7 +10,7 @@ const Divider = () => <div className="h-10 w-px bg-[#a0a48e80]" />;
 const About = () => {
   return (
     <main>
-      <section className="max-w-[1200px] mx-auto pt-16 pb-[140px] px-2.5 sm:px-5 2xl:px-0">
+      <section className="max-w-[1200px] mx-auto pt-16 pb-[140px] px-2.5 sm:px-5 2xl:px-0 overflow-hidden">
         <div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -19,7 +19,13 @@ const About = () => {
             viewport={{ once: true }}
             className="flex justify-center"
           >
-            <Image src="/svgs/leaflet.svg" width={62} height={19} loading="eager" alt="leaf" />
+            <Image
+              src="/svgs/leaflet.svg"
+              width={62}
+              height={19}
+              loading="eager"
+              alt="leaf"
+            />
           </motion.div>
           <Montserrat
             text="who we are"
@@ -214,29 +220,15 @@ const About = () => {
       <section className="max-w-[1200px] mx-auto pb-[95px] md:pb-[140px] px-2.5 sm:px-5 2xl:px-0">
         {/* Horizontal Divider + Featured In */}
         <div className="relative h-4">
-          <motion.div
-            initial={{ opacity: 0, scaleX: 0 }}
-            whileInView={{ opacity: 1, scaleX: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <Image
-              src="/svgs/horizontal-divider.svg"
-              width={1296}
-              height={1}
-              alt="border"
-            />
-          </motion.div>
-
-          <motion.p
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
-            viewport={{ once: true }}
-            className="absolute left-1/2 -translate-x-1/2 -top-1/2 font-montserrat uppercase font-medium tracking-[2px] text-brown-100 px-5 text-xsm bg-primary"
-          >
+          <Image
+            src="/svgs/horizontal-divider.svg"
+            width={1296}
+            height={1}
+            alt="border"
+          />
+          <p className="absolute left-1/2 -translate-x-1/2 -top-1/2 font-montserrat uppercase font-medium tracking-[2px] text-brown-100 px-5 text-xsm bg-primary">
             Featured In
-          </motion.p>
+          </p>
         </div>
 
         {/* Logos + Dividers */}
