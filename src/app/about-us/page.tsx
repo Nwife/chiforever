@@ -19,7 +19,7 @@ const About = () => {
             viewport={{ once: true }}
             className="flex justify-center"
           >
-            <Image src="/svgs/leaflet.svg" width={62} height={19} alt="leaf" />
+            <Image src="/svgs/leaflet.svg" width={62} height={19} loading="eager" alt="leaf" />
           </motion.div>
           <Montserrat
             text="who we are"
@@ -64,6 +64,7 @@ const About = () => {
                 height={257}
                 alt="flower"
                 className="w-full"
+                loading="eager"
               />
             </motion.div>
             <motion.div
@@ -77,6 +78,7 @@ const About = () => {
                 width={560}
                 height={826}
                 alt="wedding"
+                loading="eager"
               />
             </motion.div>
             <motion.div
@@ -92,6 +94,7 @@ const About = () => {
                 width={270}
                 height={511.54}
                 alt="olive-branch"
+                loading="eager"
               />
             </motion.div>
           </div>
@@ -107,6 +110,7 @@ const About = () => {
               width={375.2}
               height={553.94}
               alt="wedding"
+              loading="eager"
             />
           </motion.div>
           <motion.div
@@ -121,6 +125,7 @@ const About = () => {
               width={375.2}
               height={553.94}
               alt="wedding"
+              loading="eager"
             />
           </motion.div>
         </div>
