@@ -19,13 +19,28 @@ const Navbar = () => {
       <div className="tracking-[2px] font-gfsNeohellenic mx-auto max-w-[1400px] hidden lg:flex justify-between items-center py-6 px-20">
         <div className="w-[60px]"></div>
         <div className="flex items-center text-xs gap-12 uppercase">
-          <Link className={`${isActiveLink("/") ? "text-green-400" : "text-green-800"}`} href="/">
+          <Link
+            className={`${
+              isActiveLink("/") ? "text-green-400" : "text-green-800"
+            }`}
+            href="/"
+          >
             Home
           </Link>
-          <Link className={`${isActiveLink("/about-us") ? "text-green-400" : "text-green-800"}`} href="/about-us">
+          <Link
+            className={`${
+              isActiveLink("/about-us") ? "text-green-400" : "text-green-800"
+            }`}
+            href="/about-us"
+          >
             About
           </Link>
-          <Link className={`${isActiveLink("/services") ? "text-green-400" : "text-green-800"}`} href="/services">
+          <Link
+            className={`${
+              isActiveLink("/services") ? "text-green-400" : "text-green-800"
+            }`}
+            href="/services"
+          >
             Services
           </Link>
         </div>
@@ -33,10 +48,20 @@ const Navbar = () => {
           <Logo />
         </div>
         <div className="flex items-center text-xs gap-10 uppercase">
-          <Link className={`${isActiveLink("portfolio") ? "text-green-400" : "text-green-800"}`} href="/portfolio">
+          <Link
+            className={`${
+              isActiveLink("portfolio") ? "text-green-400" : "text-green-800"
+            }`}
+            href="/portfolio"
+          >
             Portfolio
           </Link>
-          <Link className={`${isActiveLink("contact-us") ? "text-green-400" : "text-green-800"}`} href="/contact-us">
+          <Link
+            className={`${
+              isActiveLink("contact-us") ? "text-green-400" : "text-green-800"
+            }`}
+            href="/contact-us"
+          >
             Contact Us
           </Link>
         </div>
@@ -91,12 +116,14 @@ const Navbar = () => {
           </div>
         </div>
       )}
-      <Image
-        src="/svgs/horizontal-divider.svg"
-        width={1296}
-        height={1}
-        alt="border"
-      />
+      <div className="max-w-[1400px] mx-auto">
+        <Image
+          src="/svgs/horizontal-divider.svg"
+          width={1296}
+          height={1}
+          alt="border"
+        />
+      </div>
       <div className="absolute left-1/2 transform -translate-x-1/2 py-1 max-w-[1400px]">
         <Image
           src="/svgs/vertical-divider.svg"
